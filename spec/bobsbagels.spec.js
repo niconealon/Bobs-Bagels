@@ -1,29 +1,19 @@
-const assertEquals = require('./test-framework')
-const basket = require('../src/basket.js')
-const bagelInBasket = require('../src/basket.js')
-
-console.log('Test 1:')
-//Arrange
-let basket = 0
-let expectedOutput = 1
-
-//Act 
-let actualOutput = bagelInBasket
-
-//Assert
-let result = assertEquals(actualOutput, expectedOutput)
+const assertEquals = require('./test-framework');
+const Basket = require('../src/Basket');
+const Item = require('../src/Item');
+// Test 1
+let basket, item, expectedOutput, result;
+basket = new Basket();
+item = new Item();
+expected0utput = 1
+basket.addItem(item);
+result = assertEquals(basket.items.length,expectedOutput);
+console.log(result);
+result = assertEquals(basket.items.includes(item),true);
 console.log(result);
 
-
-console.log('Test 2')
-//Arrange
-basket = ['cheese', 'butter', 'nutella']
-expectedOutput = ['cheese', 'butter']
-
-//Act 
-actualOutput = bagelsInBasket
-
-//Assert
-result = assertEquals(actualOutput, expectedOutput)
-console.log(result);
-
+// Test 2
+fullBasket = new FullBasket
+expectedOutput = true
+result = assertEquals(basket.items.length(10), expectedOutput)
+console.log(result)

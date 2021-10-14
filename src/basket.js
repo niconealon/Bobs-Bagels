@@ -1,4 +1,20 @@
-let basket = 0 
-let bagelInBasket = 1
+class Basket {
+    constructor(initialItems = []) {
+        this.items = initialItems;
+    }
 
-module.exports = {basket, bagelInBasket};
+    addItem(newItem) {
+        this.items.push(newItem);
+    }
+};
+
+class FullBasket {
+    constructor(totalItems = [10]) {
+        this.items = totalItems;
+    }
+
+    return fullBasket. ;
+    }
+};
+module.exports = Basket;
+
